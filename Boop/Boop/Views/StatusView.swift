@@ -102,7 +102,7 @@ class StatusView: NSView {
         case .success(let value):
             text = value
         case .normal:
-            text = "Press ⌘+B to get started"
+            text = "按住 ⌘ + enter 搜索"
         case .updateAvailable(let link):
             text = "New version available! "
         
