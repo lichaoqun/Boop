@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.Cocoa.XIB" version="3.0" toolsVersion="16097" targetRuntime="MacOSX.Cocoa" propertyAccessControl="none" useAutolayout="YES" customObjectInstantitationMethod="direct">
+<document type="com.apple.InterfaceBuilder3.Cocoa.XIB" version="3.0" toolsVersion="17701" targetRuntime="MacOSX.Cocoa" propertyAccessControl="none" useAutolayout="YES" customObjectInstantitationMethod="direct">
     <dependencies>
         <deployment identifier="macosx"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.CocoaPlugin" version="16097"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.CocoaPlugin" version="17701"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <objects>
@@ -426,7 +426,10 @@
                     <modifierMask key="keyEquivalentModifierMask"/>
                     <menu key="submenu" title="Scripts" id="U3P-so-E58">
                         <items>
-                            <menuItem title="Open Picker" keyEquivalent="b" id="8ka-cp-srR">
+                            <menuItem title="Open Picker" id="8ka-cp-srR">
+                                <string key="keyEquivalent" base64-UTF8="YES">
+DQ
+</string>
                                 <connections>
                                     <action selector="openPickerMenu:" target="Voe-Tx-rLC" id="tmO-7H-2TQ"/>
                                 </connections>
@@ -506,7 +509,7 @@ Gw
             <windowStyleMask key="styleMask" titled="YES" closable="YES" miniaturizable="YES" resizable="YES"/>
             <windowPositionMask key="initialPositionMask" leftStrut="YES" rightStrut="YES" topStrut="YES" bottomStrut="YES"/>
             <rect key="contentRect" x="335" y="390" width="480" height="360"/>
-            <rect key="screenRect" x="0.0" y="0.0" width="1440" height="900"/>
+            <rect key="screenRect" x="0.0" y="0.0" width="1920" height="1055"/>
             <value key="minSize" type="size" width="480" height="360"/>
             <view key="contentView" wantsLayer="YES" id="EiT-Mj-1SZ">
                 <rect key="frame" x="0.0" y="0.0" width="480" height="360"/>
@@ -537,18 +540,18 @@ Gw
                             </textField>
                             <scrollView borderType="none" autohidesScrollers="YES" horizontalLineScroll="45" horizontalPageScroll="10" verticalLineScroll="45" verticalPageScroll="10" usesPredominantAxisScrolling="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Kim-cP-qoy">
                                 <rect key="frame" x="0.0" y="0.0" width="440" height="140"/>
-                                <clipView key="contentView" drawsBackground="NO" id="k53-tn-QWl">
+                                <clipView key="contentView" ambiguous="YES" drawsBackground="NO" id="k53-tn-QWl">
                                     <rect key="frame" x="0.0" y="0.0" width="440" height="140"/>
                                     <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                                     <subviews>
-                                        <tableView verticalHuggingPriority="750" allowsExpansionToolTips="YES" columnAutoresizingStyle="lastColumnOnly" columnReordering="NO" columnSelection="YES" columnResizing="NO" multipleSelection="NO" autosaveColumns="NO" rowHeight="43" rowSizeStyle="automatic" viewBased="YES" id="hJ8-Qr-O0F" customClass="ScriptTableView" customModule="Boop" customModuleProvider="target">
+                                        <tableView verticalHuggingPriority="750" ambiguous="YES" allowsExpansionToolTips="YES" columnAutoresizingStyle="lastColumnOnly" columnReordering="NO" columnSelection="YES" columnResizing="NO" multipleSelection="NO" autosaveColumns="NO" rowHeight="43" rowSizeStyle="automatic" viewBased="YES" id="hJ8-Qr-O0F" customClass="ScriptTableView" customModule="Boop" customModuleProvider="target">
                                             <rect key="frame" x="0.0" y="0.0" width="440" height="140"/>
                                             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                                             <size key="intercellSpacing" width="3" height="2"/>
                                             <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="0.0" colorSpace="custom" customColorSpace="sRGB"/>
                                             <color key="gridColor" name="gridColor" catalog="System" colorSpace="catalog"/>
                                             <tableColumns>
-                                                <tableColumn width="437" minWidth="40" maxWidth="1000" id="oAy-Ya-q4E">
+                                                <tableColumn width="408" minWidth="40" maxWidth="1000" id="oAy-Ya-q4E">
                                                     <tableHeaderCell key="headerCell" lineBreakMode="truncatingTail" borderStyle="border">
                                                         <color key="textColor" name="headerTextColor" catalog="System" colorSpace="catalog"/>
                                                         <color key="backgroundColor" name="headerColor" catalog="System" colorSpace="catalog"/>
@@ -556,12 +559,12 @@ Gw
                                                     <customCell key="dataCell" alignment="left" id="hKX-Tq-apH"/>
                                                     <tableColumnResizingMask key="resizingMask" resizeWithTable="YES" userResizable="YES"/>
                                                     <prototypeCellViews>
-                                                        <tableCellView identifier="scriptCell" id="XkG-Fy-tdM" customClass="ScriptTableViewCell" customModule="Boop" customModuleProvider="target">
-                                                            <rect key="frame" x="1" y="1" width="437" height="43"/>
+                                                        <tableCellView identifier="scriptCell" misplaced="YES" id="XkG-Fy-tdM" customClass="ScriptTableViewCell" customModule="Boop" customModuleProvider="target">
+                                                            <rect key="frame" x="11" y="1" width="417" height="43"/>
                                                             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                                                             <subviews>
                                                                 <imageView horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="ODE-N3-eZN">
-                                                                    <rect key="frame" x="8" y="8" width="30" height="30"/>
+                                                                    <rect key="frame" x="8" y="9" width="30" height="30"/>
                                                                     <constraints>
                                                                         <constraint firstAttribute="width" constant="30" id="3Lp-yt-Tn1"/>
                                                                         <constraint firstAttribute="height" constant="30" id="uEa-Wh-Tu7"/>
@@ -569,10 +572,10 @@ Gw
                                                                     <imageCell key="cell" refusesFirstResponder="YES" alignment="left" imageScaling="proportionallyUpOrDown" image="icons8-broom" id="wtt-XN-7xb"/>
                                                                 </imageView>
                                                                 <stackView distribution="fill" orientation="vertical" alignment="leading" spacing="0.0" horizontalStackHuggingPriority="249.99998474121094" verticalStackHuggingPriority="249.99998474121094" detachesHiddenViews="YES" translatesAutoresizingMaskIntoConstraints="NO" id="GSG-6c-xJD">
-                                                                    <rect key="frame" x="45" y="3" width="392" height="40"/>
+                                                                    <rect key="frame" x="45" y="3" width="372" height="41"/>
                                                                     <subviews>
                                                                         <textField verticalHuggingPriority="750" horizontalCompressionResistancePriority="250" allowsExpansionToolTips="YES" translatesAutoresizingMaskIntoConstraints="NO" id="V6y-xm-z2x">
-                                                                            <rect key="frame" x="-2" y="16" width="151" height="24"/>
+                                                                            <rect key="frame" x="-2" y="16" width="152" height="25"/>
                                                                             <textFieldCell key="cell" lineBreakMode="truncatingTail" sendsActionOnEndEditing="YES" title="Remove Slashes" id="lg9-Vc-9ib">
                                                                                 <font key="font" metaFont="systemLight" size="21"/>
                                                                                 <color key="textColor" name="controlTextColor" catalog="System" colorSpace="catalog"/>
@@ -666,16 +669,16 @@ Gw
                     <toolbarItem implicitItemIdentifier="NSToolbarFlexibleSpaceItem" id="ri3-8q-QoT"/>
                     <toolbarItem implicitItemIdentifier="C5459F48-A2E4-4A46-BA5F-7368C65F8AC9" label="Custom View" paletteLabel="Custom View" tag="-1" sizingBehavior="auto" id="mG6-GU-aNe">
                         <nil key="toolTip"/>
-                        <customView key="view" id="zMi-QK-dkF" customClass="StatusView" customModule="Boop" customModuleProvider="target">
-                            <rect key="frame" x="0.0" y="14" width="208" height="20"/>
-                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
+                        <customView key="view" misplaced="YES" id="zMi-QK-dkF" customClass="StatusView" customModule="Boop" customModuleProvider="target">
+                            <rect key="frame" x="0.0" y="14" width="208" height="0.0"/>
+                            <autoresizingMask key="autoresizingMask"/>
                             <subviews>
                                 <stackView distribution="equalCentering" orientation="horizontal" alignment="centerY" spacing="0.0" horizontalStackHuggingPriority="249.99998474121094" verticalStackHuggingPriority="249.99998474121094" detachesHiddenViews="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Nlt-yx-S75">
                                     <rect key="frame" x="4" y="0.0" width="200" height="20"/>
                                     <subviews>
                                         <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="aib-Zm-MbW">
-                                            <rect key="frame" x="26" y="3" width="148" height="15"/>
-                                            <textFieldCell key="cell" lineBreakMode="clipping" alignment="center" title="Press ⌘+B to get started" drawsBackground="YES" id="Sc8-Qd-kcQ">
+                                            <rect key="frame" x="14" y="3" width="173" height="15"/>
+                                            <textFieldCell key="cell" lineBreakMode="clipping" alignment="center" title="Press ⌘+ enter to get started" drawsBackground="YES" id="Sc8-Qd-kcQ">
                                                 <font key="font" metaFont="systemLight" size="12"/>
                                                 <color key="textColor" name="labelColor" catalog="System" colorSpace="catalog"/>
                                                 <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
